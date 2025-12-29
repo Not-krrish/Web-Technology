@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Admission 2026</title>
+    <style>
+        
+        body {
+            font-family: sans-serif;
+            background-color: #e3f2fd;
+        }
+        .container {
+            background-color: white;
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #fc701f;
+        }
+        input, select, textarea {
+            width: 95%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid rgb(131, 94, 94);
+        }
+
+       
+        input[type="radio"] {
+            width: auto;
+            margin-right: 5px;
+        }
+        .btn {
+            background-color: #20973a;
+            color: rgb(255, 255, 255);
+            border: none;
+            padding: 10px;
+            width: 100%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Admission Portal</h1>
+        <p style="text-align: center;">Fill out the form.</p>
+        <hr>
+
+        <form>
+            <label><b>Student Name:</b></label><br>
+            <input type="text" placeholder="Enter Full Name" required>
+            
+            <label><b>Email Address:</b></label><br>
+            <input type="email" placeholder="example@gmail.com" required>
+
+            <label><b>Mobile Number:</b></label><br>
+            <input type="number" placeholder="10 digit mobile no">
+
+            <label><b>Date of Birth:</b></label><br>
+            <input type="date">
+
+            <label><b>Gender:</b></label><br>
+            <div style="margin-top: 5px; margin-bottom: 10px;">
+                <input type="radio" name="gender" value="Male"> Male
+                &nbsp;&nbsp; <input type="radio" name="gender" value="Female"> Female
+                &nbsp;&nbsp;
+                <input type="radio" name="gender" value="Other"> Other
+            </div>
+
+            <label><b>Select Stream:</b></label><br>
+            <select>
+                <option>-- Select --</option>
+                <option>Science</option>
+                <option>Commerce</option>
+                <option>Arts</option>
+            </select>
+
+            <label><b>Select College:</b></label><br>
+            <select>
+                <option>-- Select --</option>
+                <option>Jspm Rscoe</option>
+                <option>Gov College of Pune</option>
+                <option>Other</option>
+            </select>
+
+            <label><b>10th:</b></label><br>
+            <input type="number" placeholder="Enter percentage">
+
+            <label><b>12th:</b></label><br>
+            <input type="number" placeholder="Enter percentage">
+
+            <label><b>Address:</b></label><br>
+            <textarea rows="4" placeholder="Your permanent address"></textarea>
+
+            <br><br>
+
+            <radio name="terms" required> I agree to the <a href="#">terms and conditions</a>.<br><br>
+            
+
+
+            <button type="submit" class="btn">Submit Application</button>
+        </form>
+    </div>
+
+</body>
+</html>
